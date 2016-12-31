@@ -1,4 +1,4 @@
 $(function(){
-  $("#leftPanel").load("left.html");
+  $("#leftPanel").load("_includes/left.html");
   $("#rightPanel").load("right.html");
 });
