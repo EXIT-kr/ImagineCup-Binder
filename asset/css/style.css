@@ -2,6 +2,21 @@ html, body {
   height:100%;
 }
 
+nav{
+  padding: 10px;
+  background: white;
+  border-bottom: 1px solid #e1e2e4;
+}
+nav h1,
+nav h2,
+nav h3,
+nav h4,
+nav h5,
+nav h6{
+  padding-top: 4px;
+  margin: 0px;
+}
+
 #leftPanel{
   background: #273347;
   color: white;
@@ -9,6 +24,8 @@ html, body {
 }
 
 #rightPanel{
+  padding: 0px;
+  background: #fafafb;
   height: 100%;
 }
 #main{
