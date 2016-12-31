@@ -17,6 +17,14 @@ nav h6{
   margin: 0px;
 }
 
+#section_chatul a:hover{
+  text-decoration: none;
+}
+
+#section_chat a{
+  color: white;
+}
+
 #leftPanel{
   background: #273347;
   color: white;
@@ -47,6 +55,20 @@ nav h6{
   transition: 0.3s;
   border-radius: 3px;
   background: #1aafd0;
+}
+
+#nav_header h3{
+  padding: 0px;
+  margin: 0px;
+}
+#nav_header p{
+  padding: 0px;
+  margin: 0px;
+}
+
+#chat_input{
+  height: 100px;
+  bottom: 1px;
 }
 
 container{

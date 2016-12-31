@@ -1,4 +1,4 @@
 $(function(){
   $("#leftPanel").load("_includes/left.html");
-  $("#rightPanel").load("right.html");
+  $("#rightPanel").load("route/chat.html");
 });
