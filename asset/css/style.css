@@ -1,3 +1,16 @@
-body{
-  
+html, body {
+  height:100%;
+}
+
+#leftPanel{
+  background: #273347;
+  color: white;
+  height: 100%;
+}
+
+#rightPanel{
+  height: 100%;
+}
+#main{
+  height: 100%;
 }
