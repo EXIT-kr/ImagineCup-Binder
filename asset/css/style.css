@@ -62,6 +62,15 @@ nav h6{
   border-radius: 3px;
   background: #1aafd0;
 }
+
+#section_members{
+
+}
+#section_members .profile{
+  width: 32px;
+  margin-right: 5px;
+  border-radius: 100%;
+}
 #nav_header{
   padding: 10px
 }
