@@ -7,11 +7,6 @@
         <button type="button" class="btn btn-default"><i class="xi-star-o xi-x"></i></button>
         <button type="button" class="btn btn-default"><i class="xi-bell-off-o xi-x"></i></button>
       </div>
-      <span>
-
-
-
-      </span>
     </div>
 
   </div>
@@ -22,22 +17,53 @@
 </nav>
 
 <container>
-  <card>
-    <h4>Tooltips &amp; popovers in button groups require special setting</h4>
-    <p>When using tooltips or popovers on elements within a <code>.btn-group</code>,
-       you'll have to specify the option <code>container: 'body'</code> to avoid unwanted side effects
-       (such as the element growing wider and/or losing its rounded corners when the tooltip or popover is triggered).
+  <message>
+    <h4><i class="xi-info-o xi-x"></i> Notice</h4>
+    <p class="msg">This is channel for question for <code>Anythings</code>.
      </p>
-  </card>
-  <card>
-    <h4>Cards</h4>
-    <p>
-      This is Test Message
-    </p>
+  </message>
+  <message>
+    <div class="header">
+      <img class="profile" src="../public/img/profile_example2.jpg" />
+      <h4 class="name">David Hook</h4>
+      <h6 class="date">6:59 PM</h6>
+    </div>
 
-  </card>
-  <card>hello</card>
+    <p class="msg">
+      The includes are of <code>SQL.php</code>, the below code is SQL.php<br />
+      Notice: Undefined index: myusername in C:\xampp1\htdocs\cp\global\class\user.php on line 3<br />
+      <br />
+      Fatal error: Uncaught Error: Call to undefined function mysql_connect() in C:\xampp1\htdocs\cp\global\class\SQL.php:29
+      <br />
+       Stack trace: #0 C:\xampp1\htdocs\cp\global\class\user.php(4):<br />
+       require() #1 C:\xampp1\htdocs\cp\global\func.php(2):<br />
+       require('C:\xampp1\htdoc...') #2 C:\xampp1\htdocs\cp\index.php(2):<br />
+       require('C:\xampp1\htdoc...') #3 {main} thrown in C:\xampp1\htdocs\cp\global\class\SQL.php on line 29<br />
+    </p>
+  </message>
+  <message>
+    <div class="header">
+      <img class="profile" src="../public/img/profile_example.jpeg" />
+      <h4 class="name">Andriano James</h4>
+      <h6 class="date">7:23 PM</h6>
+    </div>
+
+    <p class="msg">
+      Use <code>mysql</code> extension. Because mysql extension is deprecated.
+    </p>
+  </message>
   <div id="chat_input">
-    <input type="text" class="form-control" placeholder="text">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Message">
+      <div class="input-group-btn">
+        <btton class="btn btn-default">
+          <i class="xi-emoticon-happy-o xi-x"></i>
+        </btton>
+        <btton class="btn btn-default">
+          <i class="xi-plus-circle-o xi-x"></i>
+        </btton>
+        <!-- Buttons -->
+      </div>
+    </div>
   </div>
 </container>
