@@ -160,6 +160,7 @@ card > .header{
 /* column */
 
 column{
+  vertical-align: top;
   display: inline-block;
   width: 256px;
 }
