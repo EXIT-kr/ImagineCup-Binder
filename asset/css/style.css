@@ -139,6 +139,7 @@ message .msg{
 
 container{
   display: block;
+  overflow-x: scroll;
   padding: 10px;
 }
 
