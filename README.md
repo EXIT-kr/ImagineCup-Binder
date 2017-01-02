@@ -1,11 +1,13 @@
 # Binder
 This is ImagineCup 2017 Project
 
+## Usage
+
 1. Chat
 2. Manage Team Schedule
 3. Calendar
 
-# Library
+## Requirements
 
 1. [jQuery](http://jquery.com/)
 2. [Bootstrap](http://getbootstrap.com/)
