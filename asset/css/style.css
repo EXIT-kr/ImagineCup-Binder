@@ -90,7 +90,7 @@ nav h6{
   float: left;
   display: inline-block;
   width: 10%;
-  background: #2F323A;
+  background: #1F2228;
   color: white;
   height: 100%;
 }
@@ -100,8 +100,8 @@ nav h6{
   display: inline-block;
   width: 90%;
   padding: 0px;
-  /*background: #fafafb;*/
-  background: #EDEFF5;
+  background: #fafafb;
+
   height: 100%;
   max-height: 100%;
   overflow-y: auto;
@@ -115,6 +115,7 @@ nav h6{
   width:90%;
   background: white;
   padding: 10px;
+  border-top: 1px solid #e1e2e4;
 }
 #main{
   height: 100%;
@@ -148,6 +149,9 @@ nav h6{
 
 #section_members{
 
+}
+#section_members > .profile{
+  margin-right: 5px;
 }
 #nav_header{
   padding: 10px
@@ -300,6 +304,7 @@ card{
   margin: 5px;
   background: white;
   border-radius: 3px;
+  border: 1px solid #e1e2e4;
   /*box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);*/
 }
 
