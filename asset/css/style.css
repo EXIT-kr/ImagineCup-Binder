@@ -83,12 +83,17 @@ nav h6{
 /* End Bootstrap Callout */
 
 
-
+/* About Top Panel */
 
 #topPanel{
   float: left;
   width: 95%;
 }
+
+/* End Top Panel */
+
+/* About Left Panel */
+
 #leftPanel{
   /*padding: 10px;*/
   float: left;
@@ -114,6 +119,11 @@ nav h6{
   background: #5093E1;
 }
 
+/* End Left Panel */
+
+
+/* About Right Panel*/
+
 #rightPanel{
   float: left;
   display: inline-block;
@@ -125,6 +135,8 @@ nav h6{
   max-height: 100%;
   overflow-y: auto;
 }
+
+/* About Bottom Panel*/
 
 #bottomPanel{
   position: fixed;
@@ -142,10 +154,14 @@ nav h6{
   margin-right: 10px;
 }
 
+/* End Bottom Panel*/
+
 
 #main{
   height: 100%;
 }
+
+/* About Section Chat */
 
 #section_chat{
 
@@ -172,6 +188,13 @@ nav h6{
   border-radius: 3px;
   background: #1aafd0;
 }
+#chat_input{
+  height: 100px;
+  bottom: 1px;
+}
+
+/* End Section Chat */
+
 
 #section_members{
 
@@ -192,10 +215,7 @@ nav h6{
   margin: 0px;
 }
 
-#chat_input{
-  height: 100px;
-  bottom: 1px;
-}
+
 
 #section_main{
   color: white;
@@ -214,6 +234,8 @@ nav h6{
 #section_main > .body{
 
 }
+
+/* About Section Sprint */
 
 #section_sprint{
 }
@@ -241,16 +263,16 @@ nav h6{
 }
 
 
+/* End Section Sprint */
+
 
 /* Profile */
+
 .profile{
   border-radius: 100%;
 }
 
 #user_profile{
-  margin-right: 10px;
-}
-#user_name{
   margin-right: 10px;
 }
 
@@ -282,8 +304,19 @@ nav h6{
   width: 512px;
 }
 
-/* Chat Message */
 
+/* About Name */
+
+#user_name{
+  margin-right: 10px;
+}
+
+/* End Name */
+
+
+
+
+/* Chat Message */
 
 #chat_container{
   height: 80%;
