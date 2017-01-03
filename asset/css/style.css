@@ -190,13 +190,15 @@ nav h6{
 }
 
 #chat_container{
-  height: 80%;
-  overflow-y: auto;
+  float:left;
+  width: 80%;
+  /*height: 80%;*/
+  /*overflow-y: auto;*/
 }
 
 #chat_input{
   height: 100px;
-  bottom: 1px;
+  bottom: 0px;
 }
 
 /* End Section Chat */
@@ -272,6 +274,9 @@ nav h6{
 /* End Section Sprint */
 
 
+
+
+
 /* Profile */
 
 .profile{
@@ -308,6 +313,21 @@ nav h6{
 
 .profile_5x{
   width: 512px;
+}
+
+
+/* About Scroll */
+.scroll-x{
+  overflow-x: auto;
+}
+
+.scroll-y{
+  overflow-y: auto;
+}
+
+.scroll{
+  overflow-x: auto;
+  overflow-y: auto;
 }
 
 
@@ -365,10 +385,8 @@ message .msg{
 
 container{
   display: block;
-
-  max-width: auto;
   height: 100%;
-  overflow-x: auto;
+  max-height: 100%;
   padding: 10px;
 }
 
@@ -380,6 +398,7 @@ container{
 }
 
 container .sprintContainer{
+  width: 100%;
   white-space: nowrap;
 }
 
@@ -402,8 +421,10 @@ card > .header{
 /* column */
 
 column{
+  overflow-y: auto;
   vertical-align: top;
   width: 256px;
+  height: 100%;
   display: inline-block;
 }
 

@@ -3,7 +3,8 @@ $(document).ready(function(){
 
   $("#topPanel").load("_includes/top.html");
   $("#leftPanel").load("_includes/left.html");
-  $("#rightPanel").load("route/chat.html");
+  // $("#rightPanel").load("route/chat.html");
+  $("#rightPanel").load("route/sprint.html");
   $("#bottomPanel").load("_includes/bottom.html");
   $('#calendar').fullCalendar({
     dayClick: function() {
