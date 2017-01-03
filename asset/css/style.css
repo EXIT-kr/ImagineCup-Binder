@@ -245,7 +245,13 @@ nav h6{
 /* Profile */
 .profile{
   border-radius: 100%;
+}
 
+#user_profile{
+  margin-right: 10px;
+}
+#user_name{
+  margin-right: 10px;
 }
 
 #bottomPanel .profile:hover{
@@ -277,6 +283,12 @@ nav h6{
 }
 
 /* Chat Message */
+
+
+#chat_container{
+  height: 80%;
+  overflow-y: auto;
+}
 
 message{
   display: block;
@@ -311,6 +323,8 @@ message .date{
 message .msg{
   margin-left: 10px;
 }
+
+
 
 
 /* Container */
