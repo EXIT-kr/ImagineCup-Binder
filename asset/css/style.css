@@ -188,6 +188,12 @@ nav h6{
   border-radius: 3px;
   background: #1aafd0;
 }
+
+#chat_container{
+  height: 80%;
+  overflow-y: auto;
+}
+
 #chat_input{
   height: 100px;
   bottom: 1px;
@@ -317,11 +323,6 @@ nav h6{
 
 
 /* Chat Message */
-
-#chat_container{
-  height: 80%;
-  overflow-y: auto;
-}
 
 message{
   display: block;
