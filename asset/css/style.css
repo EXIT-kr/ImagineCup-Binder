@@ -245,6 +245,11 @@ nav h6{
 /* Profile */
 .profile{
   border-radius: 100%;
+
+}
+
+#bottomPanel .profile:hover{
+  border: 2px solid #5093E1;
 }
 
 .profile_bottom{
@@ -279,6 +284,7 @@ message{
   margin: 10px 5px;
   background: white;
   border-radius: 3px;
+  border: 1px solid #e1e2e4;
   /*box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);*/
 }
 
@@ -318,6 +324,13 @@ container{
   padding: 10px;
 }
 
+#sub_container{
+  float:left; width: 20%;
+  background: #E1EDF7;
+  height: 100%;
+  border-right: 1px solid #e1e2e4;
+}
+
 container .sprintContainer{
   white-space: nowrap;
 }
@@ -353,4 +366,13 @@ column > .header{
 column card{
   display: block;
   margin: 10px;
+}
+
+/* Channel */
+channel{
+  display: block;
+  padding:10px;
+  margin: 0px;
+  background: white;
+  border-bottom: 1px solid #e1e2e4;
 }
