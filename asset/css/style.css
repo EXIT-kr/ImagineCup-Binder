@@ -87,22 +87,37 @@ nav h6{
 
 #topPanel{
   float: left;
-  width: 90%;
+  width: 95%;
 }
 #leftPanel{
-  padding: 10px;
+  /*padding: 10px;*/
   float: left;
   display: inline-block;
-  width: 10%;
+  width: 5%;
   background: #1F2228;
   color: white;
   height: 100%;
 }
 
+#leftPanel > .leftSection{
+  transition: 0.1s;
+  padding: 10px;
+}
+
+#leftPanel > .leftSection:hover{
+  transition: 0.1s;
+  background: #5093E1;
+  padding: 10px;
+}
+
+#leftPanel > .leftSection.active{
+  background: #5093E1;
+}
+
 #rightPanel{
   float: left;
   display: inline-block;
-  width: 90%;
+  width: 95%;
   padding: 0px;
   background: #fafafb;
 
@@ -116,11 +131,18 @@ nav h6{
   bottom: 0px;
   right: 0px;
   color: #97A5C6;
-  width:90%;
+  width: 95%;
   background: white;
   padding: 10px;
   border-top: 1px solid #e1e2e4;
 }
+
+
+#bottom_msg{
+  margin-right: 10px;
+}
+
+
 #main{
   height: 100%;
 }
