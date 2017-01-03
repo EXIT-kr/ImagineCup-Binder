@@ -1,5 +1,6 @@
 html, body {
   height:100%;
+  overflow-y: hidden;
 }
 
 nav{
@@ -84,7 +85,10 @@ nav h6{
 
 
 
-
+#topPanel{
+  float: left;
+  width: 90%;
+}
 #leftPanel{
   padding: 10px;
   float: left;

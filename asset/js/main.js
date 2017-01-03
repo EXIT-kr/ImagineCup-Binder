@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  $("#topPanel").load("_includes/top.html");
   $("#leftPanel").load("_includes/left.html");
   $("#rightPanel").load("route/dashBoard.html");
   $('#calendar').fullCalendar({
