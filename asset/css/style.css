@@ -1,6 +1,12 @@
 html, body {
   height:100%;
+  max-height: 100%;
+  min-height: 100%;
   overflow-y: hidden;
+}
+body{
+  max-height: 100%;
+  min-height: 100%;
 }
 
 nav{
@@ -125,12 +131,12 @@ nav h6{
 /* About Right Panel*/
 
 #rightPanel{
-  float: left;
+  /*float: left;*/
   display: inline-block;
   width: 95%;
   padding: 0px;
   background: #fafafb;
-
+  margin-bottom: 61px;
   height: 100%;
   max-height: 100%;
   overflow-y: auto;
@@ -399,6 +405,8 @@ container{
 
 container .sprintContainer{
   width: 100%;
+  
+  margin-bottom:61px;
   white-space: nowrap;
 }
 
