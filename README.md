@@ -1,6 +1,12 @@
 # Binder
 This is ImagineCup 2017 Project
 
+## Team Members
+
+1. [@Yunhwan Na](https://github.com/nayunhwan) - Project Leader
+2. [@Jeewoo Yoon](https://github.com/yoonjeewoo)
+3. [@Jeonghyun Lee](https://github.com/KorJeongHyeonLee)
+
 ## Usage
 
 1. Chat
