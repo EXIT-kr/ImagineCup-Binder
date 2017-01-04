@@ -4,7 +4,6 @@ function loadPage(id ,url){
     type: "GET",
     success: function(result){}
   }).done(function(result){
-    console.log("hello");
     $(id).html(result);
   });
 }
@@ -12,6 +11,6 @@ function loadPage(id ,url){
 $(document).ready(function(){
   loadPage("#topPanel", "_includes/top.html");
   loadPage("#leftPanel", "_includes/left.html");
-  loadPage("#rightPanel", "route/sprint.html")
+  loadPage("#rightPanel", "route/chat.html")
   loadPage("#bottomPanel", "_includes/bottom.html");
 })

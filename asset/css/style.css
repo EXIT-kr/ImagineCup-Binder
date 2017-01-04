@@ -208,6 +208,11 @@ nav h6{
   bottom: 0px;
 }
 
+.msg_tool_box{
+  position: relative;
+  z-index: 99999999999;
+}
+
 /* End Section Chat */
 
 
