@@ -1,19 +1,38 @@
+
 <script>
+  function activeClass(id){
+    $(id).addClass("active");
+  }
+  function initActiveClass(id){
+    $(id).removeClass("active");
+  }
+  function initAllActiveClass(){
+    initActiveClass("#btn_dashBoard");
+    initActiveClass("#btn_chat");
+    initActiveClass("#btn_calendar");
+  }
+
+
+
   $('#btn_dashBoard').click(function(){
-      console.log("dashBoard");
-      loadPage("#rightPanel", "route/dashBoard.html")
+    initAllActiveClass();
+    activeClass(this);
+    loadPage("#rightPanel", "route/dashBoard.html")
   })
 
   $('#btn_chat').click(function(){
-    console.log("chat");
+    initAllActiveClass();
+    activeClass(this);
     loadPage("#rightPanel", "route/chat.html")
   })
 
   $('#btn_calendar').click(function(){
-    console.log("carlendar");
+    initAllActiveClass();
+    activeClass(this);
     loadPage("#rightPanel", "route/sprint.html")
   })
 </script>
+
 <section id="btn_main_logo" class="leftSection active">
     <i class="xi-paperclip xi-3x"></i>
 </section>

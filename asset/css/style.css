@@ -145,6 +145,7 @@ nav h6{
 /* About Bottom Panel*/
 
 #bottomPanel{
+  z-index: 999999999;
   position: fixed;
   bottom: 0px;
   right: 0px;
@@ -405,7 +406,7 @@ container{
 
 container .sprintContainer{
   width: 100%;
-  
+
   margin-bottom:61px;
   white-space: nowrap;
 }
