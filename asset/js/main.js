@@ -14,5 +14,4 @@ $(document).ready(function(){
   loadPage("#leftPanel", "_includes/left.html");
   loadPage("#rightPanel", "route/sprint.html")
   loadPage("#bottomPanel", "_includes/bottom.html");
-
 })
