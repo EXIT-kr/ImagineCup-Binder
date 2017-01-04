@@ -1,5 +1,6 @@
 <script>
   $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
       $('.msg_tool_box').hide()
       $('message').mouseenter(function(){
         $(this).children(".msg_tool_box").show();
@@ -44,10 +45,10 @@
     <message class="bs-callout bs-callout-danger">
       <div class="msg_tool_box pull-right">
         <div class="btn-group" role="group">
-          <button type="button" class="btn btn-default"><i class="xi-emoticon-happy-o xi-x"></i></button>
-          <button type="button" class="btn btn-default"><i class="xi-share-alt-o xi-x"></i></button>
-          <div class="btn-group" role="group">
-            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button type="button" class="btn btn-default" data-toggle="tooltip" title="Add Reaction..." ><i class="xi-emoticon-happy-o xi-x"></i></button>
+          <button type="button" class="btn btn-default" data-toggle="tooltip" title="Share"><i class="xi-share-alt-o xi-x"></i></button>
+          <div class="btn-group" role="group" data-toggle="tooltip" title="More...">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
               <i class="xi-ellipsis-h xi-x"></i>
             </button>
             <ul class="dropdown-menu dropdown-menu-right">
