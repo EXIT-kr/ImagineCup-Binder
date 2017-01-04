@@ -30,9 +30,10 @@ nav h6{
 /* Bootstrap Callout */
 .bs-callout {
     padding: 20px;
-    margin: 20px 0;
+    margin: 20px 1px;
     border: 1px solid #eee;
     border-left-width: 5px;
+    border-right: 1px solid #e1e2e4;
     border-radius: 3px;
     background: white;
     /*box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);*/

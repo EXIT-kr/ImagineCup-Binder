@@ -2,10 +2,10 @@
   $(document).ready(function(){
       $('.msg_tool_box').hide()
       $('message').mouseenter(function(){
-        $(this).children(".msg_tool_box").toggle();
+        $(this).children(".msg_tool_box").show();
         // $(this.'msg_tool_box').hide();
       }).mouseleave(function(){
-        $(this).children(".msg_tool_box").toggle();
+        $(this).children(".msg_tool_box").hide();
       });
   })
 
@@ -43,10 +43,18 @@
   <div style="height:50%"class="scroll-y">
     <message class="bs-callout bs-callout-danger">
       <div class="msg_tool_box pull-right">
-        <div class="btn-group" role="group" aria-label="...">
+        <div class="btn-group" role="group">
           <button type="button" class="btn btn-default"><i class="xi-emoticon-happy-o xi-x"></i></button>
           <button type="button" class="btn btn-default"><i class="xi-share-alt-o xi-x"></i></button>
-          <button type="button" class="btn btn-default"><i class="xi-ellipsis-h xi-x"></i></button>
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="xi-ellipsis-h xi-x"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li><a href="#">Dropdown link1</a></li>
+              <li><a href="#">Dropdown link2</a></li>
+            </ul>
+          </div>
         </div>
       </div>
       <h4><i class="xi-info-o xi-x"></i> Notice</h4>
@@ -60,7 +68,7 @@
           <button type="button" class="btn btn-default"><i class="xi-share-alt-o xi-x"></i></button>
           <button type="button" class="btn btn-default"><i class="xi-ellipsis-h xi-x"></i></button>
         </div>
-      </div>ㅁ
+      </div>
       <div class="header">
         <img class="profile" src="../public/img/profile_example.jpeg" />
         <h4 class="name">Andriano James</h4>
