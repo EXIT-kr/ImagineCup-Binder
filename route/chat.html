@@ -1,13 +1,26 @@
 <script>
   $(document).ready(function(){
-      $('[data-toggle="tooltip"]').tooltip();
-      $('.msg_tool_box').hide()
-      $('message').mouseenter(function(){
+      $("[data-toggle='tooltip']").tooltip();
+      $(".msg_tool_box").hide()
+      $("message").mouseenter(function(){
         $(this).children(".msg_tool_box").show();
-        // $(this.'msg_tool_box').hide();
+        // $(this."msg_tool_box").hide();
       }).mouseleave(function(){
         $(this).children(".msg_tool_box").hide();
       });
+      $("#btn_create_new_channel").click(function(){
+        var newChannel = $("<channel/>");
+        var mediaLeft = $("<div/>").addClass("media-left");
+        var mediaBody = $("<div/>").addClass("media-body");
+        var meadiaHeader = $("<h4/>").addClass("media-heading").text("#Test");
+        var mediaImage = $("<img/>").attr({src:"http://placehold.it/64x64"}).addClass("media-object profile");
+
+        mediaLeft.append($("<a/>").attr({href: "#"}).append(mediaImage));
+        mediaBody.append(meadiaHeader).append("test");
+        newChannel.append(mediaLeft,mediaBody);
+
+        $(newChannel).insertBefore("#btn_create_new_channel");
+      })
   })
 
 </script>
@@ -34,7 +47,7 @@
       Talk about developing Service
     </div>
   </channel>
-  <div class="text-center" style="padding: 10px;">
+  <div id="btn_create_new_channel"class="text-center" style="padding: 10px;">
     <i class="xi-plus-circle-o xi-x"></i> Create New Channel
   </div>
 
