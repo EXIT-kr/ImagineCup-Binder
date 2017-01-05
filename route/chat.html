@@ -19,12 +19,15 @@
         mediaBody.append(meadiaHeader).append("test");
         newChannel.append(mediaLeft,mediaBody);
 
-        $(newChannel).insertBefore("#btn_create_new_channel");
+        $(newChannel).insertAfter("#btn_create_new_channel");
       })
   })
 
 </script>
 <div id="sub_container">
+  <div id="btn_create_new_channel"class="text-center" style="padding: 10px;">
+    <i class="xi-plus-circle-o xi-x"></i> Create New Channel
+  </div>
   <channel>
     <div class="media-left">
       <a href="#">
@@ -47,9 +50,7 @@
       Talk about developing Service
     </div>
   </channel>
-  <div id="btn_create_new_channel"class="text-center" style="padding: 10px;">
-    <i class="xi-plus-circle-o xi-x"></i> Create New Channel
-  </div>
+
 
 
 </div>
