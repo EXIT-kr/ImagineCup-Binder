@@ -5,16 +5,6 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var index = require('./routes/index');
-var users = require('./routes/users');
-
-
-// Route Variable
-var route_login = require('./routes/login');
-var route_chat = require('./routes/chat');
-
-
-
 
 var app = express();
 
@@ -31,11 +21,18 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-// Route
-app.use('/', index);
-app.use('/login', route_login);
-app.use('/chat', route_chat);
-app.use('/users', users);
+// Route ------------------------------------------------
+
+// Route Variables
+var router_main = require('./routes/index');
+var router_users = require('./routes/users');
+
+
+// Route Functions
+app.use('/', router_main);
+app.use('/users', router_users);
+
+// End Route ------------------------------------------------
 
 
 
