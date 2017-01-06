@@ -13,7 +13,9 @@
   }
 
 
-
+  $('#btn_Login').click(function(){
+    loadLoginPage();
+  })
   $('#btn_dashBoard').click(function(){
     initAllActiveClass();
     activeClass(this);
@@ -31,6 +33,8 @@
     activeClass(this);
     loadPage("#rightPanel", "route/sprint.html")
   })
+
+
 </script>
 
 <section id="btn_main_logo" class="leftSection active">
@@ -43,6 +47,9 @@
 <br />
 <br />
 
+<section id="btn_Login" class="leftSection">
+    <i class="xi-log-in xi-3x"></i>
+</section>
 <section id="btn_dashBoard" class="leftSection">
     <i class="xi-chart-pie xi-3x"></i>
 </section>

@@ -7,6 +7,14 @@ function loadPage(id ,url){
     $(id).html(result);
   });
 }
+function loadLoginPage(){
+  $.ajax({
+    url: "/route/login.html",
+    type: "GET",
+  }).done(function(result){
+    $('body').html(result);
+  });
+}
 
 $(document).ready(function(){
   loadPage("#topPanel", "_includes/top.html");
