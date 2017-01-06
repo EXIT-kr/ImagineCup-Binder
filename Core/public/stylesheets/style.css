@@ -229,12 +229,11 @@ About Login Page
 #chat_container{
   float:left;
   width: 80%;
-  max-height: calc(100% - 168px);
-  overflow-y: auto;
+  max-height: calc(100% - 168px - 54px);
 }
 
 #chat_input{
-  height: 100px;
+  margin-top: 15px;
   bottom: 0px;
 }
 
@@ -443,11 +442,8 @@ container{
 }
 
 container.sprintContainer{
-  overflow-y: auto;;
   width: 100%;
-
-  height: 50%;
-  margin-bottom:61px;
+  height: 100%;
   white-space: nowrap;
 }
 
@@ -470,11 +466,10 @@ card > .header{
 /* column */
 
 column{
-  overflow-y: scroll;;
+  overflow-y: scroll;
   vertical-align: top;
   width: 256px;
-  height: 30%;
-  max-height: 30%;
+  height: calc(100% - 168px);
   display: inline-block;
 }
 
