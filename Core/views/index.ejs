@@ -1,42 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-
-    <meta charset="utf-8" />
-    <!-- jQuery -->
-    <script src="/lib/jquery/jquery-3.1.1.js"></script>
-    <!-- BootStrap -->
-    <script src="/lib/bootstrap/js/bootstrap.js"></script>
-    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.css" />
-
-    <!-- Moment js -->
-    <script src="/lib/moment/moment.js"></script>
-
-    <!-- fullCalendar -->
-
-    <link rel="stylesheet" href="/lib/fullcalendar/fullcalendar.css" />
-    <script src="/lib/fullcalendar/fullcalendar.js"></script>
-
-
-    <!-- XEicon -->
-    <link rel="stylesheet" href="http://cdn.jsdelivr.net/xeicon/2/xeicon.min.css">
-    <!-- This is our file -->
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <script src="/javascripts/main.js"></script>
-
+    <% include _includes/header.ejs %>
   </head>
   <body>
     <div id="leftPanel" class="text-center">
-      <% include left %>
+      <% include _includes/left %>
     </div>
     <div id="topPanel">
-      <% include top %>
+      <% include _includes/top %>
     </div>
     <div id="rightPanel">
-      
+      <% include main/chat %>
     </div>
     <div id="bottomPanel">
-      <% include bottom %>
+      <% include _includes/bottom %>
     </div>
   </body>
 </html>
