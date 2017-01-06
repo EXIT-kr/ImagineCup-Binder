@@ -100,7 +100,7 @@ About Login Page
   float: left;
   width: 70%;
   height: 100%;
-  background-image: url("/public/img/login_main.jpg");
+  background-image: url("/img/login_main.jpg");
   background-size: cover;
 }
 #login_right{
@@ -272,7 +272,7 @@ About Login Page
   padding: 20px;
   height: 320px;
   background-position: 0px -450px;
-  background-image: url('/public/img/seoul.jpg');
+  background-image: url('/img/seoul.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
