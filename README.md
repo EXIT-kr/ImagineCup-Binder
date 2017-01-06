@@ -9,9 +9,10 @@ This is ImagineCup 2017 Project
 
 ## Usage
 
-1. Chat
-2. Manage Team Schedule
-3. Calendar
+1. Login
+2. Chat
+3. Manage Team Schedule
+4. Calendar
 
 ## Requirements
 
