@@ -7,7 +7,14 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
+
+
+// Route Variable
 var route_login = require('./routes/login');
+var route_chat = require('./routes/chat');
+
+
+
 
 var app = express();
 
@@ -27,6 +34,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Route
 app.use('/', index);
 app.use('/login', route_login);
+app.use('/chat', route_chat);
 app.use('/users', users);
 
 
