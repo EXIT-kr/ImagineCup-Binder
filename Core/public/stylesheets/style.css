@@ -136,18 +136,22 @@ About Login Page
   height: 100%;
 }
 
-#leftPanel > .leftSection{
+#leftPanel > a{
+  color: white;
+}
+
+#leftPanel .leftSection{
   transition: 0.1s;
   padding: 10px;
 }
 
-#leftPanel > .leftSection:hover{
+#leftPanel .leftSection:hover{
   transition: 0.1s;
   background: #5093E1;
   padding: 10px;
 }
 
-#leftPanel > .leftSection.active{
+#leftPanel .leftSection.active{
   background: #5093E1;
 }
 
