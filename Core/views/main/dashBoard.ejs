@@ -1,0 +1,51 @@
+<script>
+$('#calendar').fullCalendar({
+  dayClick: function() {
+      alert('a day has been clicked!');
+  }
+});
+</script>
+
+
+<section id="section_main">
+  <div class="header">
+    <span><i class="xi-map-marker xi-x"></i>Gangnam, Seoul</span>
+    <span><i class="xi-partly-cloudy xi-x"></i></span> 12°C
+  </div>
+  <div class="body">
+    <h3>Hello, Yunhwan</h3>
+  </div>
+
+</section>
+
+<container>
+  <div class="bs-callout bs-callout-primary">
+    <h4>Notice</h4>
+    When using tooltips or popovers on elements within a <code>.btn-group</code>,
+       you'll have to specify the option <code>container: 'body'</code> to avoid unwanted side effects
+       (such as the element growing wider and/or losing its rounded corners when the tooltip or popover is triggered).
+  </div>
+
+  <card>
+    <h4>Cards</h4>
+    <p>
+      This is Test Message
+    </p>
+
+  </card>
+  <card>hello</card>
+  <card class="media">
+    <div class="media-left">
+      <a href="#">
+        <img class="media-object" src="http://placehold.it/64x64" alt="...">
+      </a>
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">Media heading</h4>
+      ...
+    </div>
+</card>
+<card id="calendar"></card>
+
+
+</container>
