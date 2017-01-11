@@ -1,10 +1,10 @@
-import { BinderAngular2Page } from './app.po';
+import { AgendaFolderingCssPage } from './app.po';
 
-describe('binder-angular2 App', function() {
-  let page: BinderAngular2Page;
+describe('agenda-foldering-css App', function() {
+  let page: AgendaFolderingCssPage;
 
   beforeEach(() => {
-    page = new BinderAngular2Page();
+    page = new AgendaFolderingCssPage();
   });
 
   it('should display message saying app works', () => {
