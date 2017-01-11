@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor';
 
-export class BinderAngular2Page {
+export class AgendaFolderingCssPage {
   navigateTo() {
     return browser.get('/');
   }
