@@ -7,6 +7,9 @@ import { AppComponent } from './app.component';
 import { TopComponent,BottomComponent,LeftComponent} from './_include';
 import { CardComponent,ColumnComponent,ContainerComponent,ColumnService} from './component';
 import { AgendaComponent,ChatComponent,DashComponent,LoginComponent} from './main';
+import { ChannelComponent } from './component/channel/channel.component';
+import { MessageComponent } from './component/message/message.component';
+import { BttonComponent } from './component/btton/btton.component';
 
 
 @NgModule({
@@ -21,7 +24,10 @@ import { AgendaComponent,ChatComponent,DashComponent,LoginComponent} from './mai
     AgendaComponent,
     ChatComponent,
     DashComponent,
-    LoginComponent
+    LoginComponent,
+    ChannelComponent,
+    MessageComponent,
+    BttonComponent
   ],
   imports: [
     BrowserModule,
