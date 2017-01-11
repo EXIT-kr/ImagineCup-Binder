@@ -8,10 +8,15 @@ This is ImagineCup 2017 Project
 3. [@Jeonghyun Lee](https://github.com/KorJeongHyeonLee)
 
 ## Version
+
 `[v0.0.1]` - Initialize Project
+
 `[v0.0.2]` - Base Design
+
 `[v0.0.3]` - Spilt Layout
+
 `[v0.0.4]` - Install Node js Server
+
 `[v0.0.5]` - Angular2 Core (Lastest Version)
 
 ## Usage
