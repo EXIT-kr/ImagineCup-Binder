@@ -155,6 +155,11 @@ About Login Page
   background: #5093E1;
 }
 
+
+#leftPanel #btn_main_logo{
+  padding-top: 31.5px;
+  padding-bottom: 31.5px;
+}
 /* End Left Panel */
 
 
@@ -451,6 +456,7 @@ container.sprintContainer{
 
 card{
   display: inline-block;
+  white-space: normal;
   padding: 10px;
   margin: 5px;
   background: white;
