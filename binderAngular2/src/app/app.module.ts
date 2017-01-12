@@ -5,13 +5,11 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { TopComponent,BottomComponent,LeftComponent} from './_include';
-import { CardComponent,ColumnComponent,ContainerComponent,ColumnService} from './component';
+import { CardComponent,ColumnComponent,ContainerComponent,
+  ColumnService,ChannelComponent,MessageComponent,
+  BttonComponent,MessageService,ChannelService} from './component';
 import { AgendaComponent,ChatComponent,DashComponent,LoginComponent} from './main';
-import { ChannelComponent } from './component/channel/channel.component';
-import { MessageComponent } from './component/message/message.component';
-import { BttonComponent } from './component/btton/btton.component';
-import {MessageService} from "app/component/message/message.serivce";
-import {ChannelService} from "app/component/channel/channel.service";
+
 
 
 @NgModule({
