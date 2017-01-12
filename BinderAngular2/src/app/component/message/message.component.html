@@ -1,4 +1,4 @@
-<message class="bs-callout bs-callout-danger">
+<div class="message">
   <div class="msg_tool_box pull-right">
     <div class="btn-group" role="group">
       <button type="button" class="btn btn-default" data-toggle="tooltip" title="Add Reaction..." ><i class="xi-emoticon-happy-o xi-x"></i></button>
@@ -14,7 +14,13 @@
       </div>
     </div>
   </div>
-  <h4><i class="xi-info-o xi-x"></i> Notice</h4>
-  <p class="msg">This is channel for question for <code>Anythings</code>.This is channel for question for <code>Anythings</code>.This is channel for question for <code>Anythings</code>.This is channel for question for <code>Anythings</code>.This is channel for question for <code>Anythings</code>.This is channel for question for <code>Anythings</code>.
-  </p>
-</message>
+  <h4 *ngIf="isNotice()"><i class="xi-info-o xi-x"></i> Notice</h4>
+  <div class="header" *ngIf="isNotice() === false">
+    <img class="profile" src="/img/profile_example.jpeg" />
+    <h4 class="name"><ng-content select=".message-name"></ng-content></h4>
+    <h6 class="date"><ng-content select="message-date"></ng-content></h6>
+  </div>
+
+
+  <p class="msg"><ng-content select=".message-text"></ng-content></p>
+</div>

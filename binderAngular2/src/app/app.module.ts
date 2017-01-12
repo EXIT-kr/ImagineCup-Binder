@@ -10,6 +10,8 @@ import { AgendaComponent,ChatComponent,DashComponent,LoginComponent} from './mai
 import { ChannelComponent } from './component/channel/channel.component';
 import { MessageComponent } from './component/message/message.component';
 import { BttonComponent } from './component/btton/btton.component';
+import {MessageService} from "app/component/message/message.serivce";
+import {ChannelService} from "app/component/channel/channel.service";
 
 
 @NgModule({
@@ -34,7 +36,7 @@ import { BttonComponent } from './component/btton/btton.component';
     FormsModule,
     HttpModule
   ],
-    providers: [ColumnService],
+    providers: [ColumnService,MessageService,ChannelService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
