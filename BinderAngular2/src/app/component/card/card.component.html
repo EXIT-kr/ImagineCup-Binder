@@ -1,9 +1,9 @@
 <div class="card">
-  <ng-content select=".card-head"></ng-content>
+  <ng-content *ngIf="isAddCard()" select=".card-head"></ng-content>
 
 
-  <ng-content select=".card-body"></ng-content>
-  <div class="footer">
+  <ng-content *ngIf="isAddCard()" select=".card-body"></ng-content>
+  <div class="footer" *ngIf="isAddCard()">
     <div class="pull-left">
       <i class="xi-profile xi-x"></i>
       <i class="xi-calendar-list xi-x"></i>

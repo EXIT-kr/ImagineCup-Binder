@@ -8,7 +8,13 @@ import {Component, Output, Input} from '@angular/core';
 
 
 export class CardComponent {
-
+  @Input() addCard: string = 'no';
+  isAddCard(){
+    if(this.addCard ==='yes'){
+      return false;
+    }
+    return true;
+  }
 }
 
 

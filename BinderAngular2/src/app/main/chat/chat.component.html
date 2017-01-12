@@ -1,3 +1,66 @@
-<p>
-  chat works!
-</p>
+<!--<script>-->
+  <!--$(document).ready(function(){-->
+    <!--$("[data-toggle='tooltip']").tooltip();-->
+    <!--$(".msg_tool_box").hide()-->
+    <!--$("message").mouseenter(function(){-->
+      <!--$(this).children(".msg_tool_box").show();-->
+      <!--// $(this."msg_tool_box").hide();-->
+    <!--}).mouseleave(function(){-->
+      <!--$(this).children(".msg_tool_box").hide();-->
+    <!--});-->
+    <!--$("#btn_create_new_channel").click(function(){-->
+      <!--var newChannel = $("<channel/>");-->
+      <!--var mediaLeft = $("<div/>").addClass("media-left");-->
+      <!--var mediaBody = $("<div/>").addClass("media-body");-->
+      <!--var meadiaHeader = $("<h4/>").addClass("media-heading").text("#Test");-->
+      <!--var mediaImage = $("<img/>").attr({src:"http://placehold.it/64x64"}).addClass("media-object profile");-->
+
+      <!--mediaLeft.append($("<a/>").attr({href: "#"}).append(mediaImage));-->
+      <!--mediaBody.append(meadiaHeader).append("test");-->
+      <!--newChannel.append(mediaLeft,mediaBody);-->
+
+
+      <!--$('#sub_container').append(newChannel);-->
+    <!--})-->
+  <!--})-->
+
+<!--</script>-->
+<div id="sub_container">
+  <div id="btn_create_new_channel"class="text-center" style="padding: 10px;" (click)="addChannel()">
+    <i class="xi-plus-circle-o xi-x"></i> Create New Channel
+  </div>
+  <channel *ngFor="let channel of channels">
+    <div class="channel-title">{{channel.title}}</div>
+    <div class="channel-desc">{{channel.desc}}</div>
+  </channel>
+
+
+
+</div>
+<container id="chat_container">
+  <div style="height:100%;"class="scroll-y">
+    <message class="bs-callout bs-callout-danger" notice="yes">
+      <div class="message-text">This is Notice</div>
+    </message>
+    <message class="bs-callout bs-callout-danger" *ngFor="let message of messages">
+      <div class="message-name">{{message.name}}</div>
+      <div class="message-date">{{message.date}}</div>
+      <div class="message-text">{{message.text}}</div>
+    </message>
+
+  </div>
+  <div id="chat_input">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Message">
+      <div class="input-group-btn">
+        <btton class="btn btn-default">
+          <i class="xi-emoticon-happy-o xi-x"></i>
+        </btton>
+        <btton class="btn btn-default">
+          <i class="xi-plus-circle-o xi-x"></i>
+        </btton>
+        <!-- Buttons -->
+      </div>
+    </div>
+  </div>
+</container>
