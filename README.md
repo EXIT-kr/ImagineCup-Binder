@@ -1,5 +1,7 @@
 # Binder
 This is ImagineCup 2017 Project
+This is made by `Angular2`
+
 
 ## Team Members
 
@@ -34,6 +36,7 @@ This is ImagineCup 2017 Project
 4. [XEicon](http://xpressengine.github.io/XEIcon/)
 5. [fullCalendar](https://fullcalendar.io)
 6. [Node.js](https://nodejs.org)
+7. [Angular2](https://angular.io/)
 
 ##Component Inclusion RelationShip
 
