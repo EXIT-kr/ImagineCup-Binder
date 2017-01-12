@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-
+import {routing} from 'app/routing/app.routing';
 import { AppComponent } from './app.component';
 import { TopComponent,BottomComponent,LeftComponent} from './_include';
 import { CardComponent,ColumnComponent,ContainerComponent,
@@ -32,7 +32,8 @@ import { AgendaComponent,ChatComponent,DashComponent,LoginComponent} from './mai
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing
   ],
     providers: [ColumnService,MessageService,ChannelService],
   bootstrap: [AppComponent]
