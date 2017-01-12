@@ -34,3 +34,13 @@ This is ImagineCup 2017 Project
 4. [XEicon](http://xpressengine.github.io/XEIcon/)
 5. [fullCalendar](https://fullcalendar.io)
 6. [Node.js](https://nodejs.org)
+
+##Component Inclusion RelationShip
+
+`Chat` has `Channel`, `Message`, `Btton,Container` components
+
+`Agenda` has `Card`, `Column`, `Container` components
+
+##Further help
+
+To get more help on the `angular-cli` use ng help or go check out the `Angular-CLI` README.
