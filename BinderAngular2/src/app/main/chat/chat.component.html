@@ -37,110 +37,18 @@
 
 
 </div>
-<!--<container id="chat_container">-->
-  <!--<div style="height:100%;"class="scroll-y">-->
-    <!--<message class="bs-callout bs-callout-danger">-->
-      <!--<div class="msg_tool_box pull-right">-->
-        <!--<div class="btn-group" role="group">-->
-          <!--<button type="button" class="btn btn-default" data-toggle="tooltip" title="Add Reaction..." ><i class="xi-emoticon-happy-o xi-x"></i></button>-->
-          <!--<button type="button" class="btn btn-default" data-toggle="tooltip" title="Share"><i class="xi-share-alt-o xi-x"></i></button>-->
-          <!--<div class="btn-group" role="group" data-toggle="tooltip" title="More...">-->
-            <!--<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >-->
-              <!--<i class="xi-ellipsis-h xi-x"></i>-->
-            <!--</button>-->
-            <!--<ul class="dropdown-menu dropdown-menu-right">-->
-              <!--<li><a href="#">Dropdown link1</a></li>-->
-              <!--<li><a href="#">Dropdown link2</a></li>-->
-            <!--</ul>-->
-          <!--</div>-->
-        <!--</div>-->
-      <!--</div>-->
-      <!--<h4><i class="xi-info-o xi-x"></i> Notice</h4>-->
-      <!--<p class="msg">This is channel for question for <code>Anythings</code>.This is channel for question for <code>Anythings</code>.This is channel for question for <code>Anythings</code>.This is channel for question for <code>Anythings</code>.This is channel for question for <code>Anythings</code>.This is channel for question for <code>Anythings</code>.-->
-      <!--</p>-->
-    <!--</message>-->
-    <!--<message class="bs-callout bs-callout-danger">-->
-      <!--<div class="msg_tool_box pull-right">-->
-        <!--<div class="btn-group" role="group" aria-label="...">-->
-          <!--<button type="button" class="btn btn-default"><i class="xi-emoticon-happy-o xi-x"></i></button>-->
-          <!--<button type="button" class="btn btn-default"><i class="xi-share-alt-o xi-x"></i></button>-->
-          <!--<button type="button" class="btn btn-default"><i class="xi-ellipsis-h xi-x"></i></button>-->
-        <!--</div>-->
-      <!--</div>-->
-      <!--<div class="header">-->
-        <!--<img class="profile" src="/img/profile_example.jpeg" />-->
-        <!--<h4 class="name">Andriano James</h4>-->
-        <!--<h6 class="date">7:23 PM</h6>-->
-      <!--</div>-->
+<container id="chat_container">
+  <div style="height:100%;"class="scroll-y">
+    <message class="bs-callout bs-callout-danger" notice="yes">
+      <div class="message-text">This is Notice</div>
+    </message>
+    <message class="bs-callout bs-callout-danger" *ngFor="let message of messages">
+      <div class="message-name">{{message.name}}</div>
+      <div class="message-date">{{message.date}}</div>
+      <div class="message-text">{{message.text}}</div>
+    </message>
 
-      <!--<p class="msg">-->
-        <!--I have a <code>error</code>!, Help me @David-->
-      <!--</p>-->
-    <!--</message>-->
-    <!--<message class="bs-callout bs-callout-primary">-->
-      <!--<div class="header">-->
-        <!--<img class="profile" src="/img/profile_example2.jpg" />-->
-        <!--<h4 class="name">David Hook</h4>-->
-        <!--<h6 class="date">6:59 PM</h6>-->
-      <!--</div>-->
-
-      <!--<p class="msg">-->
-        <!--The includes are of <code>SQL.php</code>, the below code is SQL.php<br />-->
-        <!--Notice: Undefined index: myusername in C:\xampp1\htdocs\cp\global\class\user.php on line 3<br />-->
-        <!--<br />-->
-        <!--Fatal error: Uncaught Error: Call to undefined function mysql_connect() in C:\xampp1\htdocs\cp\global\class\SQL.php:29-->
-        <!--<br />-->
-        <!--Stack trace: #0 C:\xampp1\htdocs\cp\global\class\user.php(4):<br />-->
-        <!--require() #1 C:\xampp1\htdocs\cp\global\func.php(2):<br />-->
-        <!--require('C:\xampp1\htdoc...') #2 C:\xampp1\htdocs\cp\index.php(2):<br />-->
-        <!--require('C:\xampp1\htdoc...') #3 {main} thrown in C:\xampp1\htdocs\cp\global\class\SQL.php on line 29<br />-->
-      <!--</p>-->
-    <!--</message>-->
-    <!--<message>-->
-      <!--<div class="header">-->
-        <!--<img class="profile" src="/img/profile_example.jpeg" />-->
-        <!--<h4 class="name">Andriano James</h4>-->
-        <!--<h6 class="date">7:23 PM</h6>-->
-      <!--</div>-->
-
-      <!--<p class="msg">-->
-        <!--Use <code>mysql</code> extension. Because mysql extension is deprecated.-->
-      <!--</p>-->
-    <!--</message>-->
-    <!--<message>-->
-      <!--<div class="header">-->
-        <!--<img class="profile" src="/img/profile_example.jpeg" />-->
-        <!--<h4 class="name">Andriano James</h4>-->
-        <!--<h6 class="date">7:23 PM</h6>-->
-      <!--</div>-->
-
-      <!--<p class="msg">-->
-        <!--Use <code>mysql</code> extension. Because mysql extension is deprecated.-->
-      <!--</p>-->
-    <!--</message>-->
-    <!--<message>-->
-      <!--<div class="header">-->
-        <!--<img class="profile" src="/img/profile_example.jpeg" />-->
-        <!--<h4 class="name">Andriano James</h4>-->
-        <!--<h6 class="date">7:23 PM</h6>-->
-      <!--</div>-->
-
-      <!--<p class="msg">-->
-        <!--Use <code>mysql</code> extension. Because mysql extension is deprecated.-->
-      <!--</p>-->
-    <!--</message>-->
-    <!--<message>-->
-      <!--<div class="header">-->
-        <!--<img class="profile" src="/img/profile_example.jpeg" />-->
-        <!--<h4 class="name">Andriano James</h4>-->
-        <!--<h6 class="date">7:23 PM</h6>-->
-      <!--</div>-->
-
-      <!--<p class="msg">-->
-        <!--Use <code>mysql</code> extension. Because mysql extension is deprecated.-->
-      <!--</p>-->
-    <!--</message>-->
-  <!--</div>-->
+  </div>
   <!--<div id="chat_input">-->
     <!--<div class="input-group">-->
       <!--<input type="text" class="form-control" placeholder="Message">-->
@@ -155,4 +63,4 @@
       <!--</div>-->
     <!--</div>-->
   <!--</div>-->
-<!--</container>-->
+</container>
