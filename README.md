@@ -40,9 +40,8 @@ This is made by `Angular2`
 
 ##Component Inclusion RelationShip
 
-`Chat` has `Channel`, `Message`, `Btton,Container` components
-
-`Agenda` has `Card`, `Column`, `Container` components
+  * `Chat` has `Channel`, `Message`, `Btton,Container` components
+  * `Agenda` has `Card`, `Column`, `Container` components
 
 ##Further help
 
