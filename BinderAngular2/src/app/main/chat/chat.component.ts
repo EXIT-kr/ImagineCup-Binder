@@ -31,6 +31,7 @@ export class ChatComponent implements OnInit {
   formEntered(event){
     if(event.keyCode===13){
       this.addMessage(event.target.value);
+      event.target.value = "";
 
     }
   }
