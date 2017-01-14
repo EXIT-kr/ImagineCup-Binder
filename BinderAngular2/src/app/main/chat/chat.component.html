@@ -45,19 +45,11 @@
       <div class="message-date" *ngIf="message.type === 'general'">{{message.date}}</div>
       <div class="message-text" *ngIf="message.type === 'general'">{{message.text}}</div>
     </message>
-    <!--<message class="bs-callout bs-callout-danger" notice="yes">-->
-      <!--<div class="message-text">This is Notice</div>-->
-    <!--</message>-->
-    <!--<message class="bs-callout bs-callout-danger" *ngFor="let message of messages">-->
-      <!--<div class="message-name">{{message.name}}</div>-->
-      <!--<div class="message-date">{{message.date}}</div>-->
-      <!--<div class="message-text">{{message.text}}</div>-->
-    <!--</message>-->
 
   </div>
   <div id="chat_input">
     <div class="input-group">
-      <input type="text" class="form-control" placeholder="Message">
+      <input type="text" class="form-control" value = "" placeholder="Message" (keypress)="formEntered($event)">
       <div class="input-group-btn">
         <btton class="btn btn-default">
           <i class="xi-emoticon-happy-o xi-x"></i>

@@ -20,9 +20,13 @@ export class ChannelService{
   getChannels(){
     return this.channels;
   }
-  addChnnel(){
+  addChannel(){
     var newMessages: Message[] = [];
     var newChannel: Channel = new Channel(false,"new channel","new channel",newMessages);
     this.channels.push(newChannel);
+  }
+  addMessage(channel:Channel,text){
+    var newMessage = new Message('general','Me','12:00pm',text);
+    channel.messages.push(newMessage);
   }
 }
