@@ -230,6 +230,7 @@ About Login Page
   float:left;
   width: 80%;
   max-height: calc(100% - 168px - 54px);
+  overflow: auto;
 }
 
 #chat_input{

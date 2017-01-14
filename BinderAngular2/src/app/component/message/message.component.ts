@@ -7,9 +7,9 @@ import {Component, OnInit, Input} from '@angular/core';
 })
 export class MessageComponent implements OnInit {
 
-  @Input() notice = 'no';
+  @Input() type = 'general';
   isNotice(){
-    if(this.notice ==='yes'){
+    if(this.type =='notice'){
       return true;
     }
     return false;
