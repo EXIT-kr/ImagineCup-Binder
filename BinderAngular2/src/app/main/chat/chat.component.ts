@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {Message,Channel,MessageService,ChannelService} from "app/component";
+import {Channel,ChannelService} from "app/component";
+
 
 
 @Component({
@@ -9,18 +10,25 @@ import {Message,Channel,MessageService,ChannelService} from "app/component";
 })
 export class ChatComponent implements OnInit {
 
-  messages :Message[] = [];
+
   channels :Channel[] = [];
   addChannel(){
     this.channelService.addChnnel();
   }
-  addMessage(){
-    this.messageService.addMessage();
+
+  activeChannel = 0;
+  channelClicked(channel){
+    for(var i =0;i<this.channels.length;i++){
+      if(this.channels[i]===channel){
+        this.activeChannel = i;
+        return;
+      }
+    }
+    channel.active = true;
   }
-  constructor(private messageService:MessageService,private channelService:ChannelService) { }
+  constructor(private channelService:ChannelService) { }
 
   ngOnInit() {
-    this.messages = this.messageService.getMessages();
     this.channels = this.channelService.getChannels();
   }
 

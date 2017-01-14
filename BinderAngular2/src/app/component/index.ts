@@ -19,7 +19,6 @@ export {ContainerComponent} from './container/container.component';
 
 /*Message Component*/
 export {Message} from "./message/message.model";
-export {MessageService} from "./message/message.serivce";
 export {MessageComponent} from "./message/message.component";
 
 /* Channel Component*/

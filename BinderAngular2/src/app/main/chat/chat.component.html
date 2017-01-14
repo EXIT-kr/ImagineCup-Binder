@@ -29,7 +29,7 @@
   <div id="btn_create_new_channel"class="text-center" style="padding: 10px;" (click)="addChannel()">
     <i class="xi-plus-circle-o xi-x"></i> Create New Channel
   </div>
-  <channel *ngFor="let channel of channels">
+  <channel *ngFor="let channel of channels" (click)="channelClicked(channel)">
     <div class="channel-title">{{channel.title}}</div>
     <div class="channel-desc">{{channel.desc}}</div>
   </channel>
@@ -39,14 +39,20 @@
 </div>
 <container id="chat_container">
   <div style="height:100%;"class="scroll-y">
-    <message class="bs-callout bs-callout-danger" notice="yes">
-      <div class="message-text">This is Notice</div>
+    <message *ngFor="let message of channels[activeChannel].messages" [type] = message.type>
+      <div class="message-text" *ngIf="message.type === 'notice'">{{message.text}}</div>
+      <div class="message-name" *ngIf="message.type === 'general'">{{message.name}}</div>
+      <div class="message-date" *ngIf="message.type === 'general'">{{message.date}}</div>
+      <div class="message-text" *ngIf="message.type === 'general'">{{message.text}}</div>
     </message>
-    <message class="bs-callout bs-callout-danger" *ngFor="let message of messages">
-      <div class="message-name">{{message.name}}</div>
-      <div class="message-date">{{message.date}}</div>
-      <div class="message-text">{{message.text}}</div>
-    </message>
+    <!--<message class="bs-callout bs-callout-danger" notice="yes">-->
+      <!--<div class="message-text">This is Notice</div>-->
+    <!--</message>-->
+    <!--<message class="bs-callout bs-callout-danger" *ngFor="let message of messages">-->
+      <!--<div class="message-name">{{message.name}}</div>-->
+      <!--<div class="message-date">{{message.date}}</div>-->
+      <!--<div class="message-text">{{message.text}}</div>-->
+    <!--</message>-->
 
   </div>
   <div id="chat_input">

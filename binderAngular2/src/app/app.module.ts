@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { TopComponent,BottomComponent,LeftComponent} from './_include';
 import { CardComponent,ColumnComponent,ContainerComponent,
   ColumnService,ChannelComponent,MessageComponent,
-  BttonComponent,MessageService,ChannelService} from './component';
+  BttonComponent,ChannelService} from './component';
 import { AgendaComponent,ChatComponent,DashComponent,LoginComponent} from './main';
 
 
@@ -35,7 +35,7 @@ import { AgendaComponent,ChatComponent,DashComponent,LoginComponent} from './mai
     HttpModule,
     routing
   ],
-    providers: [ColumnService,MessageService,ChannelService],
+    providers: [ColumnService,ChannelService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
