@@ -25,18 +25,30 @@
   <!--})-->
 
 <!--</script>-->
+
+<!-- Sub Container -->
+
 <div id="sub_container">
-  <div id="btn_create_new_channel"class="text-center" style="padding: 10px;" (click)="addChannel()">
-    <i class="xi-plus-circle-o xi-x"></i> Create New Channel
+
+  <!-- Create New Channel Button  -->
+  <!-- Click 안에 있는 addChannel 이라는 함수가 Click 됐을 때 실행된다. -->
+  <div id="btn_create_new_channel" class="text-center" style="padding: 10px;" (click)="addChannel()">
+    <i class="xi-plus-circle-o xi-x"></i>
+    <span>Create New Channel</span>
   </div>
+
   <channel *ngFor="let channel of channels" (click)="channelClicked(channel)">
     <div class="channel-title">{{channel.title}}</div>
     <div class="channel-desc">{{channel.desc}}</div>
   </channel>
-
-
-
 </div>
+
+
+<!-- End Sub Container -->
+
+
+<!-- Chat Main Container -->
+
 <container id="chat_container">
   <div style="height:100%;"class="scroll-y">
     <message *ngFor="let message of channels[activeChannel].messages" [type] = message.type>
