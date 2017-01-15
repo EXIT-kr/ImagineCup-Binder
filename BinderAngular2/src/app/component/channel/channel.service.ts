@@ -1,7 +1,13 @@
+//All channel services are defined here;
+//Sample channel data is also defined here;
+
 import {Channel} from './channel.model';
 import {Message} from "app/component/message/message.model";
 export class ChannelService{
   //chat_id:string, sender_id:string, receiver_id:string, chat_words:string, chat_time:string, chat_read:boolean
+
+
+  //sample channel data
   private channels: Channel[] = [
     {active:false,
       title: '#Notice', messages:[
@@ -18,18 +24,23 @@ export class ChannelService{
       desc: 'free chatting'}
 
   ];
+
+  //get method for channel
   getChannels(){
     return this.channels;
   }
+
+  //create new channel
   addChannel(){
     var newMessages: Message[] = [];
     var newChannel: Channel = new Channel(false,"new channel","new channel",newMessages);
     this.channels.push(newChannel);
   }
-  /*
-  addMessage(channel:Channel,text){
-    var newMessage = new Message('general','Me','12:00pm',text);
-    channel.messages.push(newMessage);
-  }
-  */
+
+  //add message to specific channel(channel is specified by parameter
+   addMessage(channel:Channel,text){
+     var newMessage = new Message('general','1','Me','1',text,'12:00pm',false);
+     channel.messages.push(newMessage);
+   }
+
 }

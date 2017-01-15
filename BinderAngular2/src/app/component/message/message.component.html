@@ -1,4 +1,6 @@
+<!--message component-->
 <div class="message">
+  <!--message box additional function buttons(start)-->
   <div class="msg_tool_box pull-right">
     <div class="btn-group" role="group">
       <button type="button" class="btn btn-default" data-toggle="tooltip" title="Add Reaction..." ><i class="xi-emoticon-happy-o xi-x"></i></button>
@@ -14,14 +16,22 @@
       </div>
     </div>
   </div>
+  <!--message box additional function buttons(end)-->
+
+  <!--'NOTICE MESSAGE HEADER(start)'-->
   <h4 *ngIf="isNotice()"><i class="xi-info-o xi-x"></i> Notice</h4>
+  <!--'NOTICE MESSAGE HEADER(end)'-->
+
+  <!--'GENERAL MESSAGE HEADER(start)'-->
   <div class="header" *ngIf="isNotice() === false">
     <img class="profile" src="../../../assets/img/profile_example.jpeg" />
     <h4 class="name"><ng-content select=".message-name"></ng-content></h4>
     <h6 class="date"><ng-content select=".message-date"></ng-content></h6>
     <h6 class="check"><ng-content select=".message-check"></ng-content></h6>
   </div>
+  <!--'GENERAL MESSAGE HEADER(end)'-->
 
-
+  <!--message text go here(start)-->
   <p class="msg"><ng-content select=".message-text"></ng-content></p>
+  <!--message text go here(end)-->
 </div>

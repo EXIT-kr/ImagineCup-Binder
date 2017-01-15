@@ -1,3 +1,6 @@
+<!--channel component-->
+<!--structure: channel-title,channel-description-->
+<!--used in chat component-->
 <div class = "channel">
   <div class="media-left">
     <a href="#">
@@ -5,7 +8,9 @@
     </a>
   </div>
   <div class="media-body">
+    <!--channel-title area-->
     <h4 class="media-heading"><ng-content select=".channel-title"></ng-content></h4>
+    <!--channel description area-->
     <ng-content select=".channel-desc"></ng-content>
   </div>
 </div>

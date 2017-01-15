@@ -1,3 +1,4 @@
+//JEEWOO make this model.
 export class Message{
   type : string;
   chat_id:string;

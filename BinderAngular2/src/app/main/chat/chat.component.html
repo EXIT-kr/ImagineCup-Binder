@@ -25,20 +25,29 @@
   <!--})-->
 
 <!--</script>-->
+<!--ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡscript made by YOONHWANㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ-->
+
+
+<!--channel area(start)-->
 <div id="sub_container">
   <div id="btn_create_new_channel"class="text-center" style="padding: 10px;" (click)="addChannel()">
     <i class="xi-plus-circle-o xi-x"></i> Create New Channel
   </div>
+  <!--iterate all channel from channels(channels are defined at chat.component.ts-->
   <channel *ngFor="let channel of channels" (click)="channelClicked(channel)">
     <div class="channel-title">{{channel.title}}</div>
     <div class="channel-desc">{{channel.desc}}</div>
   </channel>
-
+  <!--channel area(end)-->
 
 
 </div>
+
+
 <container id="chat_container">
+  <!--message area(start)-->
   <div style="height:100%;"class="scroll-y">
+    <!--iterate all messages belonging to the active channel.-->
     <message *ngFor="let message of channels[activeChannel].messages" [type] = message.type>
       <div class="message-text" *ngIf="message.type === 'notice'">{{message.chat_words}}</div>
       <div class="message-name" *ngIf="message.type === 'general'">{{message.sender_id}}</div>
@@ -46,10 +55,11 @@
       <div class="message-text" *ngIf="message.type === 'general'">{{message.chat_words}}</div>
       <div class="message-check" *ngIf="message.type === 'general'">{{message.chat_read}}</div>
     </message>
-
+    <!--message area(end)-->
   </div>
   <div id="chat_input">
     <div class="input-group">
+      <!--keypressEvent: when user presses enter, typed message is saved at messages array and displayed  -->
       <input type="text" class="form-control" value = "" placeholder="Message" (keypress)="formEntered($event)">
       <div class="input-group-btn">
         <btton class="btn btn-default">

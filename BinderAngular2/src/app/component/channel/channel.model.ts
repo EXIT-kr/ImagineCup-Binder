@@ -1,3 +1,8 @@
+// channel data model
+//active: Is this channel selected or not?
+//title: channel title
+//desc: channel description
+//messages: message array
 import {Message} from "app/component/message/message.model";
 export class Channel{
   public active: boolean;
