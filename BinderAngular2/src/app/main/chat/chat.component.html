@@ -40,10 +40,11 @@
 <container id="chat_container">
   <div style="height:100%;"class="scroll-y">
     <message *ngFor="let message of channels[activeChannel].messages" [type] = message.type>
-      <div class="message-text" *ngIf="message.type === 'notice'">{{message.text}}</div>
-      <div class="message-name" *ngIf="message.type === 'general'">{{message.name}}</div>
-      <div class="message-date" *ngIf="message.type === 'general'">{{message.date}}</div>
-      <div class="message-text" *ngIf="message.type === 'general'">{{message.text}}</div>
+      <div class="message-text" *ngIf="message.type === 'notice'">{{message.chat_words}}</div>
+      <div class="message-name" *ngIf="message.type === 'general'">{{message.sender_id}}</div>
+      <div class="message-date" *ngIf="message.type === 'general'">{{message.chat_time}}</div>
+      <div class="message-text" *ngIf="message.type === 'general'">{{message.chat_words}}</div>
+      <div class="message-check" *ngIf="message.type === 'general'">{{message.chat_read}}</div>
     </message>
 
   </div>
